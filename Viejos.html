@@ -5,31 +5,42 @@
 	<title>Amazon-Viejos</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="estilo.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="row">
-	<div class = "col-sm-12 bg-white text-dark  text-center">
+<div class="row" style="height: 100px">
+	<div class = "col-sm-12 text-dark text-center" style="background-color: #908f8f">
 	<img src="Amazon.png" class="rounded float-left" width="200" height="100">
-	<nav class="navbar navbar-expand-lg navbar-light bg-white">
-  <a class="navbar-brand" href="#"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+<div style="float: right; height: 150px" >
+  <h4>Link's de ayuda...</h4>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="Amazon Principal.html">Principal<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Mision.html">Mision</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Ayuda</a>
-      </li>
-    </ul>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="Amazon Principal.html">Principal<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="Mision.html">Mision</a>
+       <a class="nav-item nav-link active" href="Ayuda.html">Ayuda</a>
+      <a class="nav-item nav-link active" href="Reembolsos.html">Reembolso y devoluciones</a>
+    </div>
   </div>
 </nav>
-	</div>
+</div>
+
+<div style="float: left">
+<nav class="navbar navbar-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search" style="width: 635px;">
+    <button class="btn my-2 my-sm-0 bg-white" type="submit">busqueda</button>
+  </form>
+</nav>
+</div>
+
+ </div>
 </div>
 
 <div class="row">
@@ -38,9 +49,9 @@
   		<form class="form-inline">
     		<div class="input-group">
       			<div class="input-group-prepend">
-        			<span class="input-group-text" id="basic-addon1" >@</span>
+        			
       			</div>
-      			<input type="text" class="form-control" placeholder="Busqueda" aria-label="Busqueda" aria-describedby="basic-addon1">
+      			<input type="text" class="form-control" placeholder="Busqueda" aria-label="Busqueda" aria-describedby="basic-addon1" class="Navbar" style="width: 300px">
     		</div>
   		</form>
 		</nav>
@@ -64,7 +75,7 @@
 
 		<div class="col-sm-12">
 
-		<div class="col-sm-6 bg-dark mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
+		<div class="col-sm-6 bg-white mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
 			<img src="ImagenesV\alce.jpg" height="100%" width="100%">
 		</div>
 
@@ -74,6 +85,16 @@
 			<center id="info">Cabeza de alce arte de pared color cafe.</center>
 			<h4>Precio:</h4>
 			<h5><center>$290.900 COP</center></h5>
+
+			<label for="seleccion">Cantidad: </label>
+			<select id="seleccion" style="background-color: #8da1ce;">
+				<option>1 Unidad</option>
+				<option>2 Unidades</option>
+				<option>3 Unidades</option>
+				<option>4 Unidades</option>
+				<option>5 Unidades</option>
+			</select>
+
 			<div 
 			style="left: 10px;  
 			position: absolute;
@@ -109,7 +130,7 @@
 
 		<div class="col-sm-12">
 
-		<div class="col-sm-6 bg-dark mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
+		<div class="col-sm-6 bg-white mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
 			<img src="ImagenesV\chimenea.jpg" height="100%" width="100%">
 		</div>
 
@@ -119,6 +140,16 @@
 			<center id="info">Chimenea de leña acojedora para sala.</center>
 			<h4>Precio:</h4>
 			<h5><center>$3'170.000 COP</center></h5>
+
+			<label for="seleccion">Cantidad: </label>
+			<select id="seleccion" style="background-color: #8da1ce;">
+				<option>1 Unidad</option>
+				<option>2 Unidades</option>
+				<option>3 Unidades</option>
+				<option>4 Unidades</option>
+				<option>5 Unidades</option>
+			</select>
+
 			<div 
 			style="left: 10px;  
 			position: absolute;
@@ -154,7 +185,7 @@
 
 		<div class="col-sm-12">
 
-		<div class="col-sm-6 bg-dark mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
+		<div class="col-sm-6 bg-white mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
 			<img src="ImagenesV\comedor.jpg" height="100%" width="100%">
 		</div>
 
@@ -164,6 +195,16 @@
 			<center id="info">Comedor antiguo hecho en madera.</center>
 			<h4>Precio:</h4>
 			<h5><center>$1'150.000 COP</center></h5>
+
+			<label for="seleccion">Cantidad: </label>
+			<select id="seleccion" style="background-color: #8da1ce;">
+				<option>1 Unidad</option>
+				<option>2 Unidades</option>
+				<option>3 Unidades</option>
+				<option>4 Unidades</option>
+				<option>5 Unidades</option>
+			</select>
+
 			<div 
 			style="left: 10px;  
 			position: absolute;
@@ -199,7 +240,7 @@
 
 		<div class="col-sm-12">
 
-		<div class="col-sm-6 bg-dark mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
+		<div class="col-sm-6 bg-white mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
 			<img src="ImagenesV\mesaN.jpg" height="100%" width="100%">
 		</div>
 
@@ -209,6 +250,16 @@
 			<center id="info">Mesa de noche antigua hecha en madera.</center>
 			<h4>Precio:</h4>
 			<h5><center>$590.000 COP</center></h5>
+
+			<label for="seleccion">Cantidad: </label>
+			<select id="seleccion" style="background-color: #8da1ce;">
+				<option>1 Unidad</option>
+				<option>2 Unidades</option>
+				<option>3 Unidades</option>
+				<option>4 Unidades</option>
+				<option>5 Unidades</option>
+			</select>
+
 			<div 
 			style="left: 10px;  
 			position: absolute;
@@ -244,7 +295,7 @@
 
 		<div class="col-sm-12">
 
-		<div class="col-sm-6 bg-dark mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
+		<div class="col-sm-6 bg-white mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
 			<img src="ImagenesV\Mescribir.jpg" height="100%" width="100%">
 		</div>
 
@@ -254,6 +305,16 @@
 			<center id="info">Maquina de escribir de color rojo, con dos rollos de tinta para escribir.</center>
 			<h4>Precio:</h4>
 			<h5><center>$2'480.000 COP</center></h5>
+
+			<label for="seleccion">Cantidad: </label>
+			<select id="seleccion" style="background-color: #8da1ce;">
+				<option>1 Unidad</option>
+				<option>2 Unidades</option>
+				<option>3 Unidades</option>
+				<option>4 Unidades</option>
+				<option>5 Unidades</option>
+			</select>
+
 			<div 
 			style="left: 10px;  
 			position: absolute;
@@ -289,7 +350,7 @@
 
 		<div class="col-sm-12">
 
-		<div class="col-sm-6 bg-dark mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
+		<div class="col-sm-6 bg-white mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
 			<img src="ImagenesV\oso.jpeg" height="100%" width="100%">
 		</div>
 
@@ -299,6 +360,16 @@
 			<center id="info">Figura de oso hecha de marfil de color cafe.</center>
 			<h4>Precio:</h4>
 			<h5><center>$360.000 COP</center></h5>
+
+			<label for="seleccion">Cantidad: </label>
+			<select id="seleccion" style="background-color: #8da1ce;">
+				<option>1 Unidad</option>
+				<option>2 Unidades</option>
+				<option>3 Unidades</option>
+				<option>4 Unidades</option>
+				<option>5 Unidades</option>
+			</select>
+
 			<div 
 			style="left: 10px;  
 			position: absolute;
@@ -334,7 +405,7 @@
 
 		<div class="col-sm-12">
 
-		<div class="col-sm-6 bg-dark mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
+		<div class="col-sm-6 bg-white mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
 			<img src="ImagenesV\polaroid.jpg" height="100%" width="100%">
 		</div>
 
@@ -344,6 +415,16 @@
 			<center id="info">Camara Polaroid con dos paquetes de papel para tomar fotos.</center>
 			<h4>Precio:</h4>
 			<h5><center>$322.000 COP</center></h5>
+
+			<label for="seleccion">Cantidad: </label>
+			<select id="seleccion" style="background-color: #8da1ce;">
+				<option>1 Unidad</option>
+				<option>2 Unidades</option>
+				<option>3 Unidades</option>
+				<option>4 Unidades</option>
+				<option>5 Unidades</option>
+			</select>
+
 			<div 
 			style="left: 10px;  
 			position: absolute;
@@ -379,7 +460,7 @@
 
 		<div class="col-sm-12">
 
-		<div class="col-sm-6 bg-dark mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
+		<div class="col-sm-6 bg-white mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
 			<img src="ImagenesV\rocola.jpg" height="100%" width="100%">
 		</div>
 
@@ -389,6 +470,16 @@
 			<center id="info">Rocola antigua con 30 discos para escuchar.</center>
 			<h4>Precio:</h4>
 			<h5><center>$1'190.000 COP</center></h5>
+
+			<label for="seleccion">Cantidad: </label>
+			<select id="seleccion" style="background-color: #8da1ce;">
+				<option>1 Unidad</option>
+				<option>2 Unidades</option>
+				<option>3 Unidades</option>
+				<option>4 Unidades</option>
+				<option>5 Unidades</option>
+			</select>
+
 			<div 
 			style="left: 10px;  
 			position: absolute;
@@ -423,7 +514,7 @@
 
 		<div class="col-sm-12">
 
-		<div class="col-sm-6 bg-dark mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
+		<div class="col-sm-6 bg-white mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
 			<img src="ImagenesV\Tocadiscos.jpg" height="100%" width="100%">
 		</div>
 
@@ -433,6 +524,16 @@
 			<center id="info">Tocadiscos para discos de vinilo color cafe.</center>
 			<h4>Precio:</h4>
 			<h5><center>$357.990 COP</center></h5>
+
+			<label for="seleccion">Cantidad: </label>
+			<select id="seleccion" style="background-color: #8da1ce;">
+				<option>1 Unidad</option>
+				<option>2 Unidades</option>
+				<option>3 Unidades</option>
+				<option>4 Unidades</option>
+				<option>5 Unidades</option>
+			</select>
+
 			<div 
 			style="left: 10px;  
 			position: absolute;
@@ -468,7 +569,7 @@
 
 		<div class="col-sm-12">
 
-		<div class="col-sm-6 bg-dark mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
+		<div class="col-sm-6 bg-white mt-3 mb-5 border" style="float:left; width:1000px; height: 400px" align="center">
 			<img src="ImagenesV\walkman.jpg" height="100%" width="100%">
 		</div>
 
@@ -477,6 +578,16 @@
 			<center id="info">WalkMan con discket.</center>
 			<h4>Precio:</h4>
 			<h5><center>$267.990 COP</center></h5>
+
+			<label for="seleccion">Cantidad: </label>
+			<select id="seleccion" style="background-color: #8da1ce;">
+				<option>1 Unidad</option>
+				<option>2 Unidades</option>
+				<option>3 Unidades</option>
+				<option>4 Unidades</option>
+				<option>5 Unidades</option>
+			</select>
+
 			<div 
 			style="left: 10px;  
 			position: absolute;
@@ -512,9 +623,10 @@
 
 </div>
 
-<div class="row">
-	<div class="col-sm-12 bg-info text-white">
-		<div class="justify-content-center">
+<div class="col-sm-12 bg-info text-white">
+
+		<div class="justify-content-center" style="width: 1200px; margin: 0 auto; text-align: left;">
+
 		<label for="información" class="text-dark" align="justify">Información Sobre la empresa:</label>
 		<p id="información" align="justify">Amazon es un sitio web cuya función es la venta y compra de artículos por medio de su plataforma principal de ventas, siendo su nombre un referente  cuando se piensa en una compañía web comercial. Amazon es una de las compañías más conocidas a nivel global, cuyo lema es “and you’re done” que significa “y tú estás listo”. Su logo hace referencia la sonría que sale de los clientes al recibir un paquete y que esta esté puesta sobre la A y apunte hacia la Z hace referencia a que existen diversos producto desde la A hasta la Z. En la actualidad está totalmente diversificada y catalogada en diferentes líneas de productos, ofreciendo DVD, CD de música, software, videojuegos, electrónica, ropa, muebles, comida, libros, etc. Es la marca de venta al por menor más valiosa del mundo según el índice BrandZ.
 		</p>
@@ -523,8 +635,11 @@
 		P.O. Box 81226
 		Seattle, WA 98108-1226
 	    </p>
+	    <p class="text-dark" align="justify">Telefono de contacto:</p>
+	    <p>313 4895896 ext 57</p>
+        <img src="Amazon.png" class="rounded float-right" width="200" height="100">
 		</div>
+
 	</div>
-</div>
 </body>
 </html>
